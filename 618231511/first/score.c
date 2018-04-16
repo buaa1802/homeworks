@@ -2,12 +2,13 @@
 
 int main()
 {
-
   float score;
+  int scoreInt;
+  char level;
+
   printf("Please input a score: ");
   scanf("%f", &score);
-  int scoreInt = score;
-  char level;
+  scoreInt = score;
 
   switch (scoreInt / 10)
   {
