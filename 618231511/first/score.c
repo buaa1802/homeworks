@@ -12,7 +12,7 @@ int main()
 
   switch (scoreInt / 10)
   {
-    case 10: level = 'A'; break;
+    case 10:
     case 9: level = 'A'; break;
     case 8: level = 'B'; break;
     case 7: level = 'C'; break;
