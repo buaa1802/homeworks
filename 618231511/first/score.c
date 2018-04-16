@@ -9,9 +9,6 @@ int main()
   int scoreInt = score;
   char level;
 
-  printf("%d", scoreInt);
-  printf("%d", scoreInt / 10);
-
   switch (scoreInt / 10)
   {
     case 10: level = 'A'; break;
