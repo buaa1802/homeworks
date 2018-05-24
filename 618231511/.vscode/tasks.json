@@ -6,11 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "gcc",
-            "args": [
-                "-o ${fileDirname}/${fileBasenameNoExtension}.out",
-                "${fileDirname}/${fileBasenameNoExtension}.c"
-            ],
+            "command": "gcc -o ${fileDirname}/${fileBasenameNoExtension}.out ${fileDirname}/${fileBasenameNoExtension}.c",
             "group": "build",
             "presentation": {
                 "reveal": "silent"
