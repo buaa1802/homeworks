@@ -7,10 +7,13 @@
 int main() {
   int large, middle, small;
   for(large = 0; large <= 200 / 3; large++) {
-    middle = (300 - 5 * large) / 3;
+    // 中马数量必须为整数
     if((300 - 5 * large) % 3 > 0) continue;
+    middle = (300 - 5 * large) / 3;
     small = 100 - large - middle;
+    // 小马数量必须为2的整数倍
     if(small % 2 > 0) continue;
+    // 中马小马数量不能小于0
     if(middle < 0 || small < 0) break;
     printf("The horses count is: large %3d; middle %3d; small %3d;\n", large, middle, small);  
   }
